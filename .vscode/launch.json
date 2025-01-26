@@ -27,6 +27,6 @@
         "pattern": "Local: +https?://.+",
         "name": "Debug Frontend"
       }
-    },
+    }
   ]
 }
