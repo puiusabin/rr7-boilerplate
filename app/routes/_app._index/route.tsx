@@ -1,3 +1,4 @@
+import { Button } from '~/components/shadcn/ui/button';
 import type { Route } from './+types/route';
 import { Welcome } from './components/welcome/welcome';
 
@@ -10,5 +11,10 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <Welcome />
+      <Button onClick={() => console.log('clicked!')}>Click me</Button>
+    </>
+  );
 }
