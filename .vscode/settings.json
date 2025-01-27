@@ -1,5 +1,7 @@
 {
   "markdownlint.config": {
+    "MD026": false,
+    "MD040": false,
     "MD041": false
   },
   "editor.formatOnSave": true,
