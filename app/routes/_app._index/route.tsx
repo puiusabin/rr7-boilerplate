@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { Button } from '~/components/shadcn/ui/button';
 import type { Route } from './+types/route';
 import { Welcome } from './components/welcome/welcome';
@@ -10,11 +11,20 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
+export default function AppPage() {
   return (
     <>
       <Welcome />
-      <Button onClick={() => console.log('clicked!')}>Click me</Button>
+      <div className="flex justify-center">
+        <div className="flex flex-col gap-4">
+          <Link to="/poc/sample-ssr">
+            <Button className="w-72">Go to Sample SSR (Pokemon List)</Button>
+          </Link>
+          <Link to="/poc/sample-ssg">
+            <Button className="w-72">Go to Sample SSG (About Me)</Button>
+          </Link>{' '}
+        </div>
+      </div>
     </>
   );
 }
