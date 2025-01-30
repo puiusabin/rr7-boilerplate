@@ -27,7 +27,8 @@ const PocSampleSsrPage = ({ loaderData }: Route.ComponentProps) => {
 
   return (
     <div className="container mx-auto flex flex-col gap-4 p-4">
-      <h1 className="font-bold text-lg">Pokemon List</h1>
+      <h1 className="font-bold text-xl">Sample SSR Page</h1>
+      <h2 className="text-lg">Pokemon List</h2>
       <ul>
         {data.results.map((pokemon) => (
           <li key={pokemon.name}>

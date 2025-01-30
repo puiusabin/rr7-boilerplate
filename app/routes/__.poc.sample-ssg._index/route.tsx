@@ -1,9 +1,9 @@
 const PocSampleSsgPage = () => {
   return (
     <>
-      <div className="font-bold text-xl">Sample SSG Page</div>
+      <h1 className="font-bold text-xl">Sample SSG Page</h1>
       <div>
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <p>
           Hello! My name is Atman. I am a software developer with a passion for
           creating web applications. I have experience in various technologies
